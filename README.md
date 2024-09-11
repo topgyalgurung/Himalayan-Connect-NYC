@@ -44,12 +44,27 @@ By offering a streamlined platform with categorized listings, search functionali
 |Set up frontend|
 |User Authentication| 
 
+## Design
+### Wireframe 
+
+## Architecture
+### Tech Stack
+
+### Data Structure - Crow's feet diagram
+
 ## UI Workflow
 
-## Project Timeline:
+## API Design
+### External API
+
+## Plan Development 
+
+### Task Breakdown 
+### Project Timeline:
 * Week 1
 * Week 2
 * Week 3
 * Week 4
 
-* 
+
+
