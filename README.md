@@ -8,6 +8,12 @@ The Himalayan community in New York faces significant challenges in accessing es
 
 By offering a streamlined platform with categorized listings, search functionality, and multilingual support, the project will empower individuals and families to easily find the services they need to succeed.
 
+## Design
+### Wireframe 
+- [Himalayan Connect NYC FIGMA wireframe](https://www.figma.com/proto/rv1wIJmRVMcct15TuFCCBe/Himalayan-Connect-NYC-Website-UI?node-id=0-1&t=EZzUgbfIC50bxAhx-1)
+<img src="https://github.com/topgyalgurung/Himalayan-Connect-NYC/blob/master/wireframe%20draft1.png" alt="drawing" width="300"/>
+
+
 ## Data Sources:
 1. Nonprofit and Community Organizations
 * Data Sources: Websites like NYC.gov, Charity Navigator, GuideStar, or directly from local nonprofit websites.
@@ -43,10 +49,6 @@ By offering a streamlined platform with categorized listings, search functionali
 |Set up backend and database|
 |Set up frontend|
 |User Authentication| 
-
-## Design
-### Wireframe 
-[hiMAlAyAn coNNect NyC wireframe](https://www.figma.com/proto/rv1wIJmRVMcct15TuFCCBe/Himalayan-Connect-NYC-Website-UI?node-id=0-1&t=EZzUgbfIC50bxAhx-1)
 
 ## Architecture
 ### Tech Stack
