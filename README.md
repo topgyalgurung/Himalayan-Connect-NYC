@@ -46,6 +46,7 @@ By offering a streamlined platform with categorized listings, search functionali
 
 ## Design
 ### Wireframe 
+[hiMAlAyAn coNNect NyC wireframe](https://www.figma.com/proto/rv1wIJmRVMcct15TuFCCBe/Himalayan-Connect-NYC-Website-UI?node-id=0-1&t=EZzUgbfIC50bxAhx-1)
 
 ## Architecture
 ### Tech Stack
