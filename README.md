@@ -9,9 +9,9 @@ The Himalayan community in New York faces significant challenges in accessing es
 By offering a streamlined platform with categorized listings, search functionality, and multilingual support, the project will empower individuals and families to easily find the services they need to succeed.
 
 ## Design
-### Wireframe 
-- [Himalayan Connect NYC FIGMA wireframe](https://www.figma.com/proto/rv1wIJmRVMcct15TuFCCBe/Himalayan-Connect-NYC-Website-UI?node-id=0-1&t=EZzUgbfIC50bxAhx-1)
-<img src="https://github.com/topgyalgurung/Himalayan-Connect-NYC/blob/master/wireframe%1%v2" alt="drawing" width="300"/>
+#### Wireframe 
+- [Himalayan Connect NYC FIGMA wireframe](https://www.figma.com/design/rv1wIJmRVMcct15TuFCCBe/Himalayan-Connect-NYC-Website-UI?m=auto&t=NicB32WCserygMbc-1)
+
 
 
 ## Data Sources:
@@ -68,6 +68,3 @@ By offering a streamlined platform with categorized listings, search functionali
 * Week 2
 * Week 3
 * Week 4
-
-
-
