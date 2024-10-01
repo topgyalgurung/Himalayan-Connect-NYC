@@ -11,7 +11,7 @@ By offering a streamlined platform with categorized listings, search functionali
 ## Design
 ### Wireframe 
 - [Himalayan Connect NYC FIGMA wireframe](https://www.figma.com/proto/rv1wIJmRVMcct15TuFCCBe/Himalayan-Connect-NYC-Website-UI?node-id=0-1&t=EZzUgbfIC50bxAhx-1)
-<img src="https://github.com/topgyalgurung/Himalayan-Connect-NYC/blob/master/wireframe%20draft1.png" alt="drawing" width="300"/>
+<img src="https://github.com/topgyalgurung/Himalayan-Connect-NYC/blob/master/wireframe%1%v2" alt="drawing" width="300"/>
 
 
 ## Data Sources:
