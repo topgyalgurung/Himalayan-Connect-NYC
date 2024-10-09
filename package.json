@@ -1,0 +1,12 @@
+{
+  "name": "himalayan-connect-nyc",
+  "version": "1.0.0",
+  "description": "## Objective:  Himalayan Connect NYC, a comprehensive and user-friendly website that connects the Himalayan community in New York with essential resources. The platform will act as a one-stop directory, specifically catering to the needs of the Himalayan community.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

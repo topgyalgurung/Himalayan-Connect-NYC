@@ -51,7 +51,9 @@ By offering a streamlined platform with categorized listings, search functionali
 |User Authentication| 
 
 ## Architecture
+
 ### Tech Stack
+- UI: Material UI
 
 ### Data Structure - Crow's feet diagram
 
