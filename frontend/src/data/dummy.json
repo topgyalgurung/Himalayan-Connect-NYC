@@ -1,0 +1,41 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Adhikaar",
+      "description": "",
+      "category":"non profit",
+      "address": "",
+      "phone number": "",
+      "email": " "
+    },
+    {
+      "id": 2,
+      "name": "Jamling",
+      "description": "",
+      "category":"lawyer",
+      "address": "",
+      "phone number": "",
+      "email": " "
+    },
+    {
+      "id": 3,
+      "name": "Lhachoepa",
+      "description": "",
+      "category":"lawyer",
+      "address": "",
+      "phone number": "",
+      "email": " "
+    },
+    {
+        "id": 4,
+        "name":"LoNyamship Kyidug",
+        "description":" ",
+        "category":"community",
+        "address":"",
+         "phone number": "",
+         "email": " "
+        
+    }
+  ]
+}

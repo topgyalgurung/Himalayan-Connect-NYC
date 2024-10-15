@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/send";
 
-const ServiceForm = () => {
+const ServiceForm = ({ addItem }) => {
   const INITIAL_STATE = {
     name: "",
     description: "",
@@ -17,30 +17,38 @@ const ServiceForm = () => {
     picture: "",
   };
   const [formData, setFormData] = useState(INITIAL_STATE);
+  // essential state variables
+  const [answer, setAnswer] = useState("");
+  const [status, setStatus] = useState("typing");
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     // GENERIC HANDLE CHANGE
+    setAnswer(e.target.value);
     const { name, value } = e.target;
     setFormData((data) => ({
       ...data,
       [name]: value,
     }));
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("submitting");
+    try {
+      await submitForm(answer);
+      setStatus("success");
+    } catch (err) {
+      setStatus("typing");
+      setError(err);
+    }
+
     addItem({ ...formData });
     alert(`Created user ${name} w/ service ${service} & address ${address}`);
     setFormData(INITIAL_STATE);
   };
+
   return (
     <div>
-      <h1> Add a Service</h1>
-      <h2>
-        {" "}
-        Provide as much detail as possible. Your request will be reviewed by our
-        team before we add it on our site
-      </h2>
-
       <form onSubmit={handleSubmit}>
         <TextField
           id="standard-basic"
@@ -51,6 +59,7 @@ const ServiceForm = () => {
           placeholder="name"
           value={formData.name}
           onChange={handleChange}
+          disabled={status === "submitting"}
         />
         <br />
         <TextField
@@ -97,12 +106,31 @@ const ServiceForm = () => {
           onChange={handleChange}
         />
         <br /> <br />
-        <Button variant="contained" endIcon={<SendIcon />}>
+        <Button
+          variant="contained"
+          endIcon={<SendIcon />}
+          disabled={answer.length === 0 || status === "submitting"}
+        >
           Submit
         </Button>
+        {error != null && <p className="Error">{error.message}</p>}
       </form>
     </div>
   );
 };
+
+function submitForm(answer) {
+  // Pretend it's hitting the network.
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      let shouldError = answer.toLowerCase() !== "lima";
+      if (shouldError) {
+        reject(new Error("Good guess but a wrong answer. Try again!"));
+      } else {
+        resolve();
+      }
+    }, 1500);
+  });
+}
 
 export default ServiceForm;

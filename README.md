@@ -61,6 +61,11 @@ By offering a streamlined platform with categorized listings, search functionali
 
 ## API Design
 ### External API
+- Google Maps API
+  - Directions 
+  - Geocoding
+  - Maps Javascript API
+  - Places API
 
 ## Plan Development 
 
