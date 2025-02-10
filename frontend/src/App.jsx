@@ -9,39 +9,36 @@ import {
 import { useState, useMemo } from "react";
 
 //layouts
-import RootLayout from "./components/layouts/RootLayout";
-import HelpLayout from "./components/layouts/HelpLayout";
+import RootLayout from "./components/Layout/RootLayout";
+// import HelpLayout from "./components/layout/HelpLayout";
 
 //pages
 import NotFound from "./components/pages/NotFound";
-import Home from "./components/pages/Home/Home";
-import AddService from "./components/pages/AddService";
-import ServiceDetail from "./components/pages/ServiceDetail";
-import Suggest from "./components/pages/Suggest";
-import Contact, { contactAction } from "./components/pages/help/Contact";
-import Faq from "./components/pages/help/Faq";
+import HomePage from "./components/pages/HomePage/HomePage";
+// import AddService from "./components/pages/AddService/AddService";
+// import ServiceDetail from "./components/ServiceDetails/ServiceDetails";
+// import Suggest from "./components/pages/Suggest";
+// import Contact, { contactAction } from "./components/pages/help/Contact";
+// import Faq from "./components/pages/help/Faq";
 
 //auth
-import Login from "./components/auth/Login";
-import Register from "./components/auth/Register";
+// import Login from "./components/auth/Login";
+// import Register from "./components/auth/Register";
 //context
-import {UserContext} from "./context/UserContext";
+import { UserContext } from "./context/UserContext";
 
 import "./App.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
-      <Route path="add" element={<AddService />} />
-      <Route path="service" element={<ServiceDetail />} />
-      <Route path="suggest" element={<Suggest />} />
-      <Route path="register" element={<Register />} />
-      <Route path="login" element={<Login />} />
-      <Route path="help" element={<HelpLayout />} action={contactAction}>
-        <Route path="faq" element={<Faq />} />
-        <Route path="contact" element={<Contact />} action={contactAction} />
-      </Route>
+      <Route index element={<HomePage />} />
+      {/* <Route path="login" element={<Login />}/>
+      <Route path="user-profile" element={<Profile />}/>
+      <Route path="admin" element={<AdminDashboard />} />
+      <Route path="add-service" element={<AddService />} />
+      <Route path="service/:name" element={<ServiceDetail />} />
+       */}
 
       <Route>
         <Route path="*" element={<NotFound />} />
@@ -52,10 +49,9 @@ const router = createBrowserRouter(
 
 function App() {
   const [user, setUser] = useState(null);
-
   const value = useMemo(() => ({ user, setUser }), [user, setUser]);
   return (
-    <UserContext.Provider value={ value}>
+    <UserContext.Provider value={value}>
       <RouterProvider router={router} />
     </UserContext.Provider>
   );
