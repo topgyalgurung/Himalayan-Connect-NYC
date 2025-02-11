@@ -33,7 +33,7 @@ By offering a streamlined platform with categorized listings, search functionali
 3. Possible Data Storage:
 
 * Database Options: SQL databases like PostgreSQL or MySQL can store structured data like organizations, contacts, and services. (might use MongoDB since it can work well with more flexible or unstructured data)
-* APIs: You can build your own RESTful API to manage this data and keep it organized for easy access on the platform.
+* APIs: build own RESTful API to manage this data and keep it organized for easy access on the platform.
 
 ## Key Features 
 
@@ -60,18 +60,10 @@ By offering a streamlined platform with categorized listings, search functionali
 ## UI Workflow
 
 ## API Design
+
 ### External API
 - Google Maps API
   - Directions 
   - Geocoding
   - Maps Javascript API
   - Places API
-
-## Plan Development 
-
-### Task Breakdown 
-### Project Timeline:
-* Week 1
-* Week 2
-* Week 3
-* Week 4
